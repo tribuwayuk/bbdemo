@@ -1,46 +1,50 @@
 * {
-    margin: 0;
-    padding: 0;
-    outline: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
 }
 body {
-    font: normal 95%/150% Helvetica;
-    line-height: 1.5em;
-    font-size: 18px;
+  font: normal 95%/150% Helvetica;
+  line-height: 1.5em;
+  font-size: 18px;
 }
 #app {
-    margin: 100px;
+  margin: 100px;
 }
 h1, h2, h3, h4 {
-    line-height: 1.5em;
+  line-height: 1.5em;
 }
 input {
-    padding: 8px !important;
-    width: 200px;
-    font-size: 14px;
+  padding: 9px !important;
+  width: 200px;
+  font-size: 14px;
+  border: 1px solid #aaa;
+}
+input:focus {
+  border-color: black;
 }
 button.todo-button {
-    border: 1px solid #aaa;
-    padding: 9px;
-    cursor: pointer;
-    font-size: 14px;
-    background-color: #ccc;
+  border: 1px solid #aaa;
+  padding: 9px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #ccc;
 }
 button.todo-button:hover {
-    border-color: black;
-    background-color: #ddd;
+  border-color: black;
+  background-color: #ddd;
 }
 ul.todo-list {
-    list-style: none;
-    width: 400px;
+  list-style: none;
+  width: 400px;
 }
 ul.todo-list li.entry {
-    border-bottom: 1px solid #ccc;
-    padding: 10px 1px;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 1px;
 }
 .entry .title {
-    font-weight: bold;
+  font-weight: bold;
 }
 .entry .done {
-    width: inherit;
+  width: inherit;
 }
