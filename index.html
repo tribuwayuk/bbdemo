@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Todoledo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div id="app">
+
+    <h1 class="app-title">Todoledo</h1>
+
+    <form action="/" class="todo-form">
+      <input type="text" class="todo-input" placeholder="enter new todo...">
+      <button class="todo-button"> add </button>
+    </form>
+
+    <br>
+
+    <ul class="todo-list">
+
+    </ul>
+
+  </div>
+
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min.js"></script>
+  <script src="scripts/bbdemo.js"></script>
+  <script type="text/template" id="todo-entry">
+    <% var _done = '' %>
+    <% if (done) _done = 'checked' %>
+    <input type="checkbox" class="done" <%= _done %>> &nbsp;
+    <span class="title">
+      <%= title %>
+    </span> 
+  </script>
+</body>
+
+</html>
